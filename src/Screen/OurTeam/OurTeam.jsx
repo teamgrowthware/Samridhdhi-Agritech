@@ -123,7 +123,8 @@ export default function OurTeam() {
     }, []);
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white pt-20 md:pt-24">
+
             <Header />
             {/* Hero Section */}
             <div
@@ -138,7 +139,7 @@ export default function OurTeam() {
 
                 {/* Light blurred effects */}
                 <div className="absolute inset-0 opacity-10">
-                    <div className="absolute top-0 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse"></div>
+                    <div className="absolute top-0 left-1/4  h-96 bg-white rounded-full blur-3xl animate-pulse"></div>
                     <div
                         className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-300 rounded-full blur-3xl animate-pulse"
                         style={{ animationDelay: "1s" }}
