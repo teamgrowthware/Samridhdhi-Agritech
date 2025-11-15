@@ -35,7 +35,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+        <div className=" w-full mx-auto px-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className={`space-y-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
@@ -59,45 +59,69 @@ export default function Home() {
             </div>
 
             {/* Right Images */}
-            <div className={`relative transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-              <div className="relative">
-                {/* Main Image */}
-                <div
-                  className="relative z-10 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500"
-                  style={{ transform: `translateY(${scrollY * 0.1}px)` }}
-                >
-                  <img
-                    src="https://images.stockcake.com/public/e/6/e/e6e4865c-08b7-4633-b428-f5658462485e_large/farmers-tending-crops-stockcake.jpg"
-                    alt="Farmer"
-                    className="w-full h-[400px] object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-green-900/30 to-transparent"></div>
-                </div>
+           <div className={`relative transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
+  <div className="relative">
 
-                {/* Secondary Image */}
-                <div
-                  className="absolute -bottom-10 -right-10 w-64 h-64 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500 border-4 border-white"
-                  style={{ transform: `translateY(${scrollY * -0.05}px)` }}
-                >
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRii5PhXN6bkzVVpKR5t1KetcDNbLyAfuufaPSGhTsr1pmXB9HRrRe88ZhtAd41mvoedFY&usqp=CAU"
-                    alt="Family farming"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+    {/* Main Video (replaces main image) */}
+    <div
+      className="relative z-10 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500"
+      style={{ transform: `translateY(${scrollY * 0.1}px)` }}
+    >
+      <video
+        className="w-full h-[400px] object-cover"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src="https://cdn.pixabay.com/video/2021/08/21/85897-591840755_large.mp4" type="video/mp4" />
+      </video>
 
-                {/* Decorative Elements */}
-                <div className="absolute -top-6 -left-6 w-32 h-32 bg-green-200 rounded-full blur-3xl opacity-50 animate-pulse"></div>
-                <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-emerald-200 rounded-full blur-3xl opacity-50 animate-pulse delay-700"></div>
-              </div>
-            </div>
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-green-900/30 to-transparent"></div>
+    </div>
+
+    {/* Secondary Image — unchanged */}
+    <div
+      className="absolute -bottom-10 -right-10 w-64 h-64 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500 border-4 border-white"
+      style={{ transform: `translateY(${scrollY * -0.05}px)` }}
+    >
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRii5PhXN6bkzVVpKR5t1KetcDNbLyAfuufaPSGhTsr1pmXB9HRrRe88ZhtAd41mvoedFY&usqp=CAU"
+        alt="Family farming"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+    {/* Decorative Elements */}
+    <div className="absolute -top-6 -left-6 w-32 h-32 bg-green-200 rounded-full blur-3xl opacity-50 animate-pulse"></div>
+    <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-emerald-200 rounded-full blur-3xl opacity-50 animate-pulse delay-700"></div>
+
+  </div>
+</div>
+
           </div>
         </div>
       </section>
       <ServicesOffer />
       <RecentProduct />
       <WhyChooseUs />
-      <ContactPage/>
+    {/* CTA Section */}
+      <section className="py-5 bg-gradient-to-r from-green-600 to-green-700">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            Ready to Transform Your Farming?
+          </h2>
+          <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
+            Join 1000+ farmers who trust KBC Group for agricultural excellence
+          </p>
+          <button onClick={()=>navigate("/contact")}
+          className="px-10 py-4 bg-white text-green-600 font-bold rounded-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-xl">
+            Contact Us Today
+          </button>
+        </div>
+      </section>
+
 
       <Footer />
     </div>

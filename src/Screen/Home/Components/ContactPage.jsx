@@ -28,10 +28,10 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
+    <div className=" bg-gradient-to-br from-slate-50 to-slate-100">
       {/* Header */}
       <div className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="text-center animate-fade-in">
             <p className="text-sm text-blue-600 font-medium mb-2">HOW TO</p>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-3">Contact Us</h1>
@@ -42,7 +42,7 @@ export default function ContactPage() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Contact Form */}
           <div className="lg:col-span-2">

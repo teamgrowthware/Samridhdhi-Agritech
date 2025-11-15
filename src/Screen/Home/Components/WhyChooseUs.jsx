@@ -36,8 +36,8 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-green-50">
-      <div className="container mx-auto px-4 py-16">
+    <div className=" bg-gradient-to-br from-gray-50 via-white to-green-50">
+      <div className=" px-10 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className={`space-y-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
