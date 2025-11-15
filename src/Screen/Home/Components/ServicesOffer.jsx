@@ -103,7 +103,7 @@ const ServicesOffer = () => {
       </div>
 
       {/* Main Content */}
-      <div className="container mx-auto px-4 pb-16 max-w-7xl">
+      <div className=" px-10 pb-16 ">
         <div className="grid lg:grid-cols-3 gap-8 items-start">
           
           {/* Left Column */}

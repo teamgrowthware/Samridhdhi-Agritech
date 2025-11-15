@@ -171,7 +171,7 @@ const OurProducts = () => {
 </div>
 
 
-      <div className="container mx-auto px-4 py-12">
+      <div className=" px-10 py-12">
         {/* Categories */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Browse by Category</h2>
@@ -201,7 +201,7 @@ const OurProducts = () => {
         </div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-12">
           {filteredProducts.map((product) => (
             <div
               key={product.id}

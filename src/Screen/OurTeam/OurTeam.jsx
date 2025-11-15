@@ -166,7 +166,7 @@ export default function OurTeam() {
 
 
             {/* Stats Section */}
-            <section className="py-6  max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section className="py-6 mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                     {stats.map((stat, idx) => (
                         <StatCard key={idx} {...stat} delay={idx * 150} />
@@ -175,7 +175,7 @@ export default function OurTeam() {
             </section>
 
             {/* Team Section */}
-            <section className="py-2 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section className="py-2  mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <span className="inline-block px-4 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-3">
                         LEADERSHIP
@@ -197,7 +197,7 @@ export default function OurTeam() {
 
             {/* Mission Section */}
           <section className="py-12 md:py-16 bg-gradient-to-br from-blue-50 to-white">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className=" mx-auto px-10 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-8 items-center">
             
             {/* Left Section */}
