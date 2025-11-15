@@ -36,7 +36,7 @@ export default function AgricultureHero() {
   ];
 
   return (
-    <div className="relative min-h-screen bg-gray-900">
+    <div className="relative min-h-screen bg-gray-900 pt-20 md:pt-24">
         <Header/>
       {/* Video Background */}
       <div className="fixed inset-0 z-0">

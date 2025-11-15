@@ -28,7 +28,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className=" bg-gradient-to-br from-slate-50 to-slate-100">
+    <div className=" bg-gradient-to-br from-slate-50 to-slate-100 pt-20 md:pt-8">
       {/* Header */}
       <div className="bg-white shadow-sm">
         <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-6">
